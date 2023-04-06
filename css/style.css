@@ -1,0 +1,317 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*inicio*/
+body{
+  background-image: url("../imagenes/1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.nav-wraper{
+  width: 100%;
+  margin: 0 auto;
+  padding: 1rem; 
+}
+nav{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  border-radius: 0.4rem;
+}
+nav .logo{
+  font-weight: 700;
+  text-decoration: none;
+  color: black;
+}
+.logo img{
+  display: flex;
+  height: 200px;
+  width: 200px;
+  border-radius: 200px;
+  border: 2px solid #f2f5f8;
+}
+.menu ul{
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+.menu ul li a{
+  text-decoration: none;
+  color: black; 
+  font-weight: 700   
+}
+nav #toggle, nav label{
+  display: none;
+}
+.Novedades-titulo{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.Novedades-titulo h2{
+  font-size: 30px;
+  text-decoration: underline;
+  text-decoration-style: double;
+}
+.container-inicio{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  gap: 40px;
+  padding: 20px;
+  margin-top: 70px;
+
+}
+.card-title{
+  text-align: center;
+  text-decoration: underline;
+  text-decoration-style: double;
+}
+.card-text{
+  text-align: center;
+}
+.card-body{
+  background-color: #f7edcf;
+}
+.btn{
+  background-color: black;
+}
+.botton a{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  background-color: rgb(240, 217, 182);
+  border: black;
+  color: rgb(0, 0, 0);
+}
+.categoria-h2{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.categoria-h2 h2{
+  font-size: 30px;
+
+}
+@media (max-width: 800px){
+
+  nav .menu{
+      width: 100%;
+      height: 0;
+      overflow: hidden;
+  }
+  .menu ul{
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 0.5rem 0;
+  }
+  nav label{
+      display: inline-flex;
+      color: white;
+      cursor: pointer;
+  }
+  nav #toggle:checked ~ .menu{
+      height: 100%;
+  }
+  .container-inicio{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .categoria-h2{
+    display: flex;
+    justify-content: center;
+  }  
+  .categoria-h2 h2{
+    font-size: 20px;
+  }
+  .Novedades-titulo{
+    display: flex;
+    justify-content: center;
+  }  
+  .Novedades-titulo h2{
+    font-size: 20px;
+  }
+}
+/*fin de hoja de inicio*/
+/*productos*/
+.tarjetas-productos{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+}
+.categoria-h2-productos{
+  display: flex;
+  padding: 10px;
+  margin-right:1300px;
+}
+.categoria-h2-productos h2{
+  font-size: 30px;
+  text-align: center;
+  color: #000000;
+  text-decoration: underline;
+  text-decoration-style:double ;
+}
+.categorias-productos{
+  display: flex;
+  justify-content:center;
+  flex-direction: row;
+  margin: 10px;
+  border: 1px solid #000000;
+  margin: 5px;
+
+}
+
+.categorias-productos a{
+  text-decoration: none;
+  padding: 10px;
+  color: black;
+}
+.container .row {
+  display: flex;
+  flex-wrap: nowrap;
+  margin: 10px;
+  max-width: 100%
+}
+.container .row .card{
+  max-width: 100%;
+  height: 100%;
+}
+.productos-1 h3{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+.higiene-2 h3{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+.accesorios-3 h3{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+@media (min-width: 320px) and (max-width:568px ) {
+  .tarjetas-productos{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+}
+/*nosotros*/
+
+.texto {
+  display: flex;
+  justify-content: center;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.texto h3 {
+  font-size: 20px;
+  text-align: center;
+  margin-top: 40px;
+  border:  #000000 2px solid;
+  padding: 20px;
+  color: black;
+}
+footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  margin-top: 400px;
+}
+
+/*fin de la hoja de estilos de nosotros*/
+
+/*guia de talles*/
+.tabla-de-talles{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  margin-top: 10px;
+}
+.tabla-de-talles-2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  margin-top: 10px;
+}
+.tabla{
+  border: #000000 solid 2px;
+  font-weight: 700
+}
+.texto-talles{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 10px;
+}
+.texto-talles h3{
+  color: rgb(0, 0, 0);
+  font-size: 13px;
+  font-weight: 700
+}
+.guia-de-talles {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.guia-de-talles h2 {
+  color: #000000;
+  text-decoration: underline;
+  text-decoration-style: double;
+}
+.contenedores{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contenedores img {
+  width: 900px;
+}
+
+/*fin de la hoja de estilos de guia de talles*/
+
+/*contactos*/
+.contactos-h2{
+  display: flex;
+  justify-content: center;
+  text-decoration: underline;
+  text-decoration-style: double;
+}
+.contactos{
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  margin: 10px;
+}
+.link-wp a{
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 500;
+  color: black;
+  text-decoration: underline;
+  text-decoration-style: double;
+}
+/*fin de la hoja de estilos de contactos*/
+
